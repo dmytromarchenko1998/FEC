@@ -9,7 +9,7 @@ services:
     ports: 
       - '3005:3005'
   gallery:
-    build: Gallery-service/
+    build: Gallery-Service/
     depends_on:
       - 'database'
       - 'proxy'
