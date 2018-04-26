@@ -5,21 +5,18 @@ services:
     build: NearMe-service/
     depends_on:
       - 'database'
-      - 'proxy'
     ports: 
       - '3005:3005'
   gallery:
     build: Gallery-Service/
     depends_on:
       - 'database'
-      - 'proxy'
     ports: 
       - '3001:3001'
   business-info:
     build: business-info-service/
     depends_on:
       - 'database'
-      - 'proxy'
     ports: 
       - '3002:3002'
   proxy:
